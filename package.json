@@ -1,0 +1,10 @@
+{
+  "name": "@wave-av/skills",
+  "version": "1.0.0",
+  "description": "Official WAVE agent skills: media, inference, and search capabilities for AI agents \u2014 callable and payable over HTTP.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wave-av/skills"
+  }
+}
