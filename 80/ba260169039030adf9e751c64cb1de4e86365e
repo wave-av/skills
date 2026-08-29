@@ -1,0 +1,25 @@
+skills/wave-search/SKILL.md
+  s_13086dcbacd4a6::t_6661cb4621dedf 1-47
+README.md
+  s_13086dcbacd4a6::t_bc0afcbfcefd1e 1-39
+skills/wave-media/SKILL.md
+  s_13086dcbacd4a6::t_bfbcd473fcb883 1-56
+skills/wave-inference/SKILL.md
+  s_13086dcbacd4a6::t_99498d8393bfd2 1-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "80ba260169039030adf9e751c64cb1de4e86365e",
+  "prompts": {},
+  "sessions": {
+    "s_13086dcbacd4a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef676a74ffeGDIpvQIhMKNdae",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
