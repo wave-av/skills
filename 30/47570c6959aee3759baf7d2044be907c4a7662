@@ -1,0 +1,14 @@
+skills/wave-inference/SKILL.md
+  h_af5ac1a9798224 37-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3047570c6959aee3759baf7d2044be907c4a7662",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
