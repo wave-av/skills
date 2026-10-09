@@ -34,8 +34,8 @@ curl -X POST https://api.wave.online/v1/dispatch/chat/completions \
 ## Models (the live catalog)
 
 - gpt-5.6-luna — $0.40/M in, $1.20/M out
-- deepseek-v4 — $1.19/M in, $3.56/M out
-- claude-sonnet-5 — $3.33/M in, $10/M out
+- deepseek-v4 — $0.50/M in, $1/M out
+- claude-sonnet-5 — $4.40/M in, $22/M out
 - gemini-3.7-flash — $0.63/M in, $1.88/M out
 
 Full list: https://inference.wave.online/v1/models
