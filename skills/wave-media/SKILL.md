@@ -5,7 +5,7 @@ description: Upload, manage, and deliver video and audio through WAVE's media AP
 
 # WAVE Media
 
-WAVE is video infrastructure for AI agents: one API for live and on-demand media.
+WAVE is video infrastructure for AI agents: one API for live and on-demand media. <!-- # guard:allow plain-English word, not a repo reference -->
 
 ## When to use this skill
 
