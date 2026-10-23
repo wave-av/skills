@@ -1,6 +1,6 @@
 # WAVE Skills
 
-Official agent skills for [WAVE](https://wave.online) — video infrastructure for AI agents. Every
+Official agent skills for [WAVE](https://wave.online) — video infrastructure for AI agents. Every <!-- # guard:allow plain-English word, not a repo reference -->
 capability is one HTTP call, payable per-use with no account.
 
 ## Install

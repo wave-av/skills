@@ -1,0 +1,5 @@
+# Per-file carve-outs: lines the private-repo rule flags that cannot take
+# inline `# guard:allow` markers (see reason per file). The gitleaks gate
+# still scans these files. Re-check if guard terms are ever scoped (WAVE-27328).
+# package.json: own public name self-reference; json takes no markers.
+package.json
