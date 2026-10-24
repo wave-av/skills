@@ -3,3 +3,5 @@
 # still scans these files. Re-check if guard terms are ever scoped (WAVE-27328).
 # package.json: own public name self-reference; json takes no markers.
 package.json
+# AGENTS.md: machine-surface fence must stay byte-exact (hyphen-boundary FP).
+AGENTS.md
