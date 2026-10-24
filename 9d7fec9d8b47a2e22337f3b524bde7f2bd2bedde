@@ -1,0 +1,42 @@
+.buildkite/pipeline.yml
+  h_af5ac1a9798224 3,18,36,46,57,68,79,95
+.buildkite/provenance/VERSION
+  h_af5ac1a9798224 2,10,12
+.buildkite/provenance/schema/provenance.schema.json
+  h_af5ac1a9798224 3
+.buildkite/scripts/foundation-secret-scan.sh
+  h_af5ac1a9798224 4
+.buildkite/scripts/foundation-skill-validate.sh
+  h_af5ac1a9798224 4
+.buildkite/scripts/guard-content-policy.sh
+  h_af5ac1a9798224 19-27
+.buildkite/tests/guard-content-policy-fork.bats
+  h_af5ac1a9798224 110-145
+.buildkite/tests/pipeline-gating.py
+  h_af5ac1a9798224 9,93-94,129,172
+.buildkite/upload.sh
+  h_af5ac1a9798224 2
+.github/workflows/_checks.yml
+  h_af5ac1a9798224 3,5,50
+.github/workflows/foundation-gate.yml
+  h_af5ac1a9798224 1,3,5
+.guardignore
+  h_af5ac1a9798224 1-5
+README.md
+  h_af5ac1a9798224 3
+scripts/public-repo-guard/content-policy.sh
+  h_af5ac1a9798224 103,106,112-115
+skills/wave-media/SKILL.md
+  h_af5ac1a9798224 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9d7fec9d8b47a2e22337f3b524bde7f2bd2bedde",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
