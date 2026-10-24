@@ -1,0 +1,14 @@
+.guardignore
+  h_af5ac1a9798224 6-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d33e975018f187c7d0932c08ab455e053076810a",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
