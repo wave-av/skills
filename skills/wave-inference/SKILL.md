@@ -1,6 +1,6 @@
 ---
 name: wave-inference
-description: Run LLM chat completions through WAVE's inference funnel with measured routing and automatic failover across 13 providers. Use when the agent needs to generate text, analyze content, or call models like gpt-5.6-luna, deepseek-v4, or claude-sonnet-5 through one OpenAI-compatible endpoint.
+description: Run LLM chat completions through WAVE's inference funnel with measured routing and automatic failover across 13 providers. Use when the agent needs to generate text, analyze content, or call models like deepseek-v4 or claude-sonnet-5 through one OpenAI-compatible endpoint.
 ---
 
 # WAVE Inference
@@ -10,7 +10,7 @@ One OpenAI-compatible endpoint at https://inference.wave.online fronting 13 prov
 ## When to use this skill
 
 - Generate text with any frontier model through a single API
-- Automatic failover when a provider drops (gpt-5.6-luna → deepseek-v4 → claude-sonnet-5)
+- Automatic failover when a provider drops
 - Per-token cost tracking to eight decimal places
 
 ## Quick start
@@ -33,10 +33,8 @@ curl -X POST https://api.wave.online/v1/dispatch/chat/completions \
 
 ## Models (the live catalog)
 
-- gpt-5.6-luna — $0.40/M in, $1.20/M out
-- deepseek-v4 — $1.19/M in, $3.56/M out
-- claude-sonnet-5 — $3.33/M in, $10/M out
-- gemini-3.7-flash — $0.63/M in, $1.88/M out
+- deepseek-v4 — $0.50/M in, $1/M out
+- claude-sonnet-5 — $4.40/M in, $22/M out
 
 Full list: https://inference.wave.online/v1/models
 
