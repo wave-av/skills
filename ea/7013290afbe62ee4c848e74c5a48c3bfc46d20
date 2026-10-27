@@ -1,0 +1,16 @@
+.buildkite/scripts/guard-probe.sh
+  h_af5ac1a9798224 1-65
+.buildkite/wave-ci.json
+  h_af5ac1a9798224 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ea7013290afbe62ee4c848e74c5a48c3bfc46d20",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
