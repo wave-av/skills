@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wave.online/schemas/review-finding.v1.json",
+  "title": "WAVE review finding v1",
+  "description": "One finding from any WAVE reviewer bot. Every specialist emits this shape; only the reflector posts it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "bot", "specialist", "repo", "pr", "path", "line", "severity", "confidence", "category", "title", "evidence", "tier", "model"],
+  "properties": {
+    "schema_version": {"const": "1"},
+    "id": {"type": "string", "pattern": "^f_[0-9a-f]{16}$", "description": "Stable fingerprint: bot, repo, path, rule and normalized title. Same issue on a later push keeps its id."},
+    "bot": {"type": "string", "minLength": 1, "description": "Login or name of the producing bot (fleet specialist or vendor)."},
+    "specialist": {"type": "string", "enum": ["logic-bugs", "security", "performance", "api-contract", "docs-tests", "data-migrations", "vendor", "other"]},
+    "repo": {"type": "string", "pattern": "^[\\w.-]+/[\\w.-]+$"},
+    "pr": {"type": "integer", "minimum": 1},
+    "path": {"type": "string", "minLength": 1},
+    "line": {"type": "integer", "minimum": 0, "description": "0 means file level."},
+    "end_line": {"type": ["integer", "null"], "minimum": 0},
+    "severity": {"type": "string", "enum": ["critical", "major", "minor", "nit"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "category": {"type": "string", "enum": ["logic", "security", "performance", "api", "docs-tests", "data", "style", "other"]},
+    "rule_id": {"type": ["string", "null"]},
+    "title": {"type": "string", "minLength": 3, "maxLength": 140},
+    "evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "description": "Why this is a problem: quoted code, a trace, a failing input."},
+    "suggested_patch": {"type": ["string", "null"], "description": "Unified diff against the PR head, or null."},
+    "agent_fix_prompt": {"type": ["string", "null"], "description": "Self-contained prompt an agent can run to fix it."},
+    "learnings_applied": {"type": "array", "items": {"type": "string"}, "default": []},
+    "tier": {"type": "string", "enum": ["tier0", "fanout", "vet", "final", "vendor"]},
+    "model": {"type": "string", "description": "provider/model, or 'deterministic' for tier0."},
+    "created_at": {"type": ["string", "null"]}
+  }
+}
